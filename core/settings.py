@@ -282,7 +282,7 @@ JAZZMIN_SETTINGS = {
     "site_brand": "EG-COCO",
 
     # Logo to use for your site, must be present in static files, used for brand on top left
-    "site_logo": BASE_DIR / "static/images/logo.svg",
+    "site_logo": "images/logo.svg",
 
     # Logo to use for your site, must be present in static files, used for login form logo (defaults to site_logo)
     "login_logo": None,
@@ -294,7 +294,7 @@ JAZZMIN_SETTINGS = {
     "site_logo_classes": "img-circle",
 
     # Relative path to a favicon for your site, will default to site_logo if absent (ideally 32x32 px)
-    "site_icon": BASE_DIR / "static/images/logo.svg",
+    "site_icon": "images/logo.svg",
 
     # Welcome text on the login screen
     "welcome_sign": "Welcome to EG-COCO",
