@@ -16,7 +16,7 @@ class User(AbstractUser):
     phone_number = PhoneNumberField(unique=True, null=False, blank=False)
 
     REQUIRED_FIELDS = ['username', ]
-    USERNAME_FIELD = 'email'
+    USERNAME_FIELD = 'username'
 
     objects = CustomUserManager()
 
