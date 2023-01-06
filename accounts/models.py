@@ -25,3 +25,10 @@ class User(AbstractUser):
 
     def __str__(self):
         return self.email
+
+
+class Customer(models.Model):
+    name = models.CharField(max_length=20)
+    email = models.EmailField(null=True)
+    phone_number = PhoneNumberField()
+    note = models.TextField(null=True, blank=True)

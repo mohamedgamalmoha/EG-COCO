@@ -48,6 +48,9 @@ INSTALLED_APPS = [
 
     # Custom Apps
     'accounts',
+    'service',
+    'order',
+    'info'
 ]
 
 MIDDLEWARE = [
@@ -66,7 +69,7 @@ ROOT_URLCONF = 'core.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / "templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -163,8 +166,8 @@ REST_FRAMEWORK = {
 # DJOSER Configuration
 DJOSER = {
     'SERIALIZERS': {
-         'user_create': 'accounts.serializers.UserRegistrationSerializer',
-         'user': 'accounts.serializers.UserRegistrationSerializer',
+         'user_create': 'accounts.api.serializers.UserRegistrationSerializer',
+         'user': 'accounts.api.serializers.UserRegistrationSerializer',
     }
 }
 
@@ -203,6 +206,8 @@ CORS_ALLOW_METHODS = [
 CKEDITOR_CONFIGS = {
     'default': {
         'skin': 'moono',
+        'height': '100%',
+        'width': '100%',
         # 'skin': 'office2013',
         'toolbar_Basic': [
             ['Source', '-', 'Bold', 'Italic']
@@ -268,16 +273,16 @@ CKEDITOR_CONFIGS = {
 # JAZZMIN Configurations
 JAZZMIN_SETTINGS = {
     # title of the window (Will default to current_admin_site.site_title if absent or None)
-    "site_title": "Library Admin",
+    "site_title": "EG-COCO",
 
     # Title on the login screen (19 chars max) (defaults to current_admin_site.site_header if absent or None)
-    "site_header": "Library",
+    "site_header": "EG-COCO",
 
     # Title on the brand (19 chars max) (defaults to current_admin_site.site_header if absent or None)
-    "site_brand": "Library",
+    "site_brand": "EG-COCO",
 
     # Logo to use for your site, must be present in static files, used for brand on top left
-    "site_logo": "books/img/logo.png",
+    "site_logo": BASE_DIR / "static/images/logo.svg",
 
     # Logo to use for your site, must be present in static files, used for login form logo (defaults to site_logo)
     "login_logo": None,
@@ -289,13 +294,13 @@ JAZZMIN_SETTINGS = {
     "site_logo_classes": "img-circle",
 
     # Relative path to a favicon for your site, will default to site_logo if absent (ideally 32x32 px)
-    "site_icon": None,
+    "site_icon": BASE_DIR / "static/images/logo.svg",
 
     # Welcome text on the login screen
-    "welcome_sign": "Welcome to the library",
+    "welcome_sign": "Welcome to EG-COCO",
 
     # Copyright on the footer
-    "copyright": "Acme Library Ltd",
+    "copyright": "EG-COCO family",
 
     # List of model admins to search from the search bar, search bar omitted if excluded
     # If you want to use a single search field you dont need to use a list, you can use a simple string
