@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/eggcoco/static/css/main.d0415753.css",
+    "main.js": "/eggcoco/static/js/main.47885c59.js",
+    "static/media/Group 10108.png": "/eggcoco/static/media/Group 10108.4b1af7ed6c03509ae418.png",
+    "static/media/CheckOutProjects.png": "/eggcoco/static/media/CheckOutProjects.72a691269c7fb0ec13d4.png",
+    "static/media/Burger.png": "/eggcoco/static/media/Burger.052e9ec3575f2c0f1eb5.png",
+    "static/media/Shopipi.png": "/eggcoco/static/media/Shopipi.f0fac2a4e34473e4b0e9.png",
+    "static/media/avatar1.png": "/eggcoco/static/media/avatar1.bbced79e444e684e1d25.png",
+    "static/media/Coffe.png": "/eggcoco/static/media/Coffe.aeacdae0fc4d181dbcdd.png",
+    "static/media/Popcorn.png": "/eggcoco/static/media/Popcorn.692a05759976348f3f13.png",
+    "static/media/avatar3.png": "/eggcoco/static/media/avatar3.7a6500e8dd3855ffd157.png",
+    "static/media/M'Course.png": "/eggcoco/static/media/M'Course.37eb484d34fb8a4837d5.png",
+    "static/media/Women_avatar.png": "/eggcoco/static/media/Women_avatar.09191aed40fb7f2056fd.png",
+    "static/media/avatar2.png": "/eggcoco/static/media/avatar2.09191aed40fb7f2056fd.png",
+    "static/media/Girl2.png": "/eggcoco/static/media/Girl2.c75ba489b537ae98ac30.png",
+    "static/media/Alpaca.png": "/eggcoco/static/media/Alpaca.b84425d2f4b080902364.png",
+    "static/media/GirlImage.png": "/eggcoco/static/media/GirlImage.f73802a4db794f0e49e3.png",
+    "static/media/ProjectVector.png": "/eggcoco/static/media/ProjectVector.814a4a137587c7871b5c.png",
+    "static/media/ContentVector.png": "/eggcoco/static/media/ContentVector.f64174f848bb00c0a5c3.png",
+    "static/media/ideat.png": "/eggcoco/static/media/ideat.cd0c646b0efc7affc4fa.png",
+    "static/media/Programing.png": "/eggcoco/static/media/Programing.41bf301ae87e52a3db09.png",
+    "static/media/Web.png": "/eggcoco/static/media/Web.41bf301ae87e52a3db09.png",
+    "static/media/Digital.png": "/eggcoco/static/media/Digital.40b536467aa872f3b75a.png",
+    "static/media/Marketing.png": "/eggcoco/static/media/Marketing.40b536467aa872f3b75a.png",
+    "static/media/Busines.png": "/eggcoco/static/media/Busines.deb8160549e379c9fcc8.png",
+    "static/media/App.png": "/eggcoco/static/media/App.6dc8e7cb5f4f2cc19972.png",
+    "static/media/Design.png": "/eggcoco/static/media/Design.0eb939065cc94b5e62a8.png",
+    "static/media/HomeVector.png": "/eggcoco/static/media/HomeVector.37ef698e9f06ad7927c0.png",
+    "static/media/Map.png": "/eggcoco/static/media/Map.dd257dab154877880474.png",
+    "static/media/BlueVector.png": "/eggcoco/static/media/BlueVector.9c04d2078f2e783f4330.png",
+    "static/media/Shape 3.png": "/eggcoco/static/media/Shape 3.9c04d2078f2e783f4330.png",
+    "index.html": "/eggcoco/index.html",
+    "main.d0415753.css.map": "/eggcoco/static/css/main.d0415753.css.map",
+    "main.47885c59.js.map": "/eggcoco/static/js/main.47885c59.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d0415753.css",
+    "static/js/main.47885c59.js"
+  ]
+}
