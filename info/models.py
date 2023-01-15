@@ -22,7 +22,7 @@ class MainInfo(models.Model):
 
     @property
     def whatsapp_link(self):
-        return f"https://wa.me/+2{self.whatsapp}"
+        return f"https://wa.me/{self.whatsapp}"
 
 
 class ContactUs(models.Model):
