@@ -83,3 +83,4 @@ target/
 */__pycache__/
 .flake8
 db.sqlite3
+media
