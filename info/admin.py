@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import ContactUs, MainInfo, TeamMember
+from .models import ContactUs, MainInfo, TeamMember, FAQs, PreviousProject, SubscribedEmails, Company
 
 
 class MainInfoAdmin(admin.ModelAdmin):
@@ -23,6 +23,26 @@ class TeamMemberAdmin(admin.ModelAdmin):
     ...
 
 
+class FAQsAdmin(admin.ModelAdmin):
+    list_display = ('__str__', 'active', 'created', 'updated')
+
+
+class PreviousProjectAdmin(admin.ModelAdmin):
+    list_display = ('__str__', 'active', 'created', 'updated')
+
+
+class SubscribedEmailsAdmin(admin.ModelAdmin):
+    list_display = ('__str__', 'created', 'updated')
+
+
+class CompanyAdmin(admin.ModelAdmin):
+    list_display = ('__str__', 'created', 'updated')
+
+
+admin.site.register(FAQs, FAQsAdmin)
+admin.site.register(Company, CompanyAdmin)
 admin.site.register(MainInfo, MainInfoAdmin)
 admin.site.register(ContactUs, ContactUsAdmin)
 admin.site.register(TeamMember, TeamMemberAdmin)
+admin.site.register(PreviousProject, PreviousProjectAdmin)
+admin.site.register(SubscribedEmails, SubscribedEmailsAdmin)
