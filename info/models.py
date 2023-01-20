@@ -52,7 +52,7 @@ class TeamMember(models.Model):
 class FAQs(models.Model):
     quote = models.CharField(max_length=1000)
     answer = models.TextField()
-    active = models.BooleanField(default=True)
+    active = models.BooleanField(default=False)
     created = models.DateTimeField(auto_now_add=True, null=True)
     updated = models.DateTimeField(auto_now=True, null=True)
 
@@ -92,6 +92,7 @@ class SubscribedEmails(models.Model):
 class Company(models.Model):
     name = models.CharField(max_length=200)
     image = models.ImageField(upload_to='companies/')
+    active = models.BooleanField(default=True)
     created = models.DateTimeField(auto_now_add=True, null=True)
     updated = models.DateTimeField(auto_now=True, null=True)
 
