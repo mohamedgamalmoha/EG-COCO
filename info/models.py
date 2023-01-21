@@ -64,10 +64,23 @@ class FAQs(models.Model):
         return self.quote
 
 
+class PreviousProjectColor(models.TextChoices):
+    RED = 'red', 'RED'
+    BLUE = 'blue', 'BLUE'
+    ORANGE = 'orange', 'ORANGE'
+    YELLOW = 'yellow', 'YELLOW'
+    GREEN = 'green', 'GREEN'
+    SKY = 'sky', 'SKY'
+    MOF = 'mof', 'MOF'
+    PINK = 'pink', 'PINK'
+    GRAY = 'gray', 'GRAY'
+
+
 class PreviousProject(models.Model):
     name = models.CharField(max_length=1000)
     description = models.TextField()
     image = models.ImageField(upload_to='projects/')
+    color = models.CharField(max_length=50, choices=PreviousProjectColor.choices, null=True)
     active = models.BooleanField(default=True)
     created = models.DateTimeField(auto_now_add=True, null=True)
     updated = models.DateTimeField(auto_now=True, null=True)
