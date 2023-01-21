@@ -4,10 +4,11 @@ from django.conf import settings
 from django.core.management.base import BaseCommand
 
 
-FRONTEND_DIR = settings.FRONTEND_DIR
+FRONTEND_DIR = getattr(settings, 'FRONTEND_DIR', settings.BASE_DIR / "frontend")
 
 HTML_ENCODING: str = 'utf-8'
-HTML_BASE_FILENAME: str = settings.HTML_BASE_FILENAME or 'index.html'
+HTML_BASE_FILENAME: str = getattr(settings, 'HTML_BASE_FILENAME', 'index.html')
+
 STATIC_LOAD_TAG: str = '{% load static %}\n'
 TAG_ATTR: dict = {
     'link': 'href',
